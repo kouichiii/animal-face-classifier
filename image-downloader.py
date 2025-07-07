@@ -7,9 +7,11 @@ ds = load_dataset("microsoft/cats_vs_dogs")
 os.makedirs("images", exist_ok=True)
 os.makedirs("images/dogs", exist_ok=True)
 os.makedirs("images/cats", exist_ok=True)
+os.makedirs("images/humans", exist_ok=True)
 
 cat_index = 0
 dog_index = 0
+human_index = 0
 print("ダウンロード中・・・")
 for i in range(ds["train"].num_rows):
     img = ds["train"][i]["image"]
@@ -19,4 +21,10 @@ for i in range(ds["train"].num_rows):
         cat_index += 1
     else:
         img.save(f"images/dogs/{dog_index}.jpg")
-        dog_index += 1
+        dog_index +=1
+
+ds = load_dataset("bitmind/lfw")
+for i in range(ds["train"].num_rows):
+    img = ds["train"][i]["image"]
+    img.save(f"images/humans/{human_index}.jpg")
+    human_index +=1
