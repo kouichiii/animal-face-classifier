@@ -2,9 +2,10 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
-cat_size = 100
-dog_size = 100
+cat_size = 10000
+dog_size = 10000
 human_size = 200
 
 def load_and_preprocess(image_paths):
@@ -26,12 +27,18 @@ human_images = load_and_preprocess([f"images/humans/{i}.jpg" for i in range(huma
 from sklearn.decomposition import PCA
 
 # 動物データを統合（ラベル：猫=0，犬=1）
-X_train = np.vstack([cat_images, dog_images])
-y_train = np.array([0]*cat_size + [1]*dog_size)
+X_animals = np.vstack([cat_images, dog_images])
+y_animals = np.array([0]*cat_size + [1]*dog_size)
+
+X_train, X_test, Y_train, Y_test = train_test_split(
+    X_animals, y_animals, test_size=0.2, stratify=y_animals, random_state=42
+)
 
 # PCA次元削減（分散95%を保持）
 pca = PCA(n_components=0.95)
-X_train_pca = pca.fit_transform(X_train)
+pca.fit(X_train)
+X_train_pca = pca.transform(X_train)
+X_test_pca = pca.transform(X_test)
 
 # 人間データを同一空間に射影
 X_human_pca = pca.transform(human_images)
@@ -62,7 +69,11 @@ from sklearn.model_selection import GridSearchCV
 # ハイパーパラメータチューニング（交差検証）
 param_grid = {'C': [0.1, 1, 10], 'gamma': ['scale', 'auto']}
 svm = GridSearchCV(SVC(kernel='rbf'), param_grid, cv=5)
-svm.fit(X_train_pca, y_train)
+svm.fit(X_train_pca, Y_train)
+
+# 最適動物分類モデルの評価
+print(f"Best parameters: {svm.best_params_}")
+print(f"Training accuracy: {svm.score(X_test_pca, Y_test)}")
 
 # 人間と動物の類似性予測
 human_predictions = svm.predict(X_human_pca)  # 0=猫似，1=犬似
