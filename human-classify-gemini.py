@@ -1,6 +1,5 @@
-# このプログラムは、Google Geminiを使用して人間の顔画像を「犬のような」または「猫のような」顔として分類するものです。
-# 
-
+# Geminiを使って、images/humansの顔画像を分類します
+# APIを使用するので注意してください
 
 import json
 import os
@@ -51,20 +50,33 @@ class Answer(BaseModel):
   reason: str
   result: CatOrDog
 
-client = genai.Client()
+print("GeminiのAPIを使用します。よろしいですか？")
+res = input("y/n: ")
+while res not in ['y', 'n']:
+    print("'y' か 'n'で答えてください。")
+    res = input("y/n: ")
+if res == 'n':
+    print("プログラムを終了します。")
+    exit(0)
 
-# Directories
-human_dir = "images/humans"
-humans_classified_dir = "images/humans-classified"
-cat_dir = "images/humans-classified/cat-like"
-dog_dir = "images/humans-classified/dog-like"
+api_key = os.getenv("GEMINI_API_KEY")
+if api_key is None:
+    print("GEMINI_API_KEY を入力してください")
+    api_key = input("Enter your Gemini API key: ")
+
+os.environ["GEMINI_API_KEY"] = api_key
+try:
+    client = genai.Client()
+except Exception as e:
+    print(f"Gemini APIのクライアントを作成できませんでした: {e}")
+    exit(1)
 
 results = {}
-print("Wait 6 seconds between each image processing to avoid rate limits")
+print("レートリミットを避けるために、各画像処理の間に6秒待機します")
 for image_index in range(NUMBER_OF_IMAGES):
     image_name = f'{str(image_index)}.jpg'
-    print(f"Processing image: {image_name}")
-    image_path = os.path.join(human_dir, image_name)
+    print(f"{image_name} を処理しています")
+    image_path = (f"images/humans/{image_name}")
     if os.path.isfile(image_path):
         with open(image_path, 'rb') as f:
             image_bytes = f.read()
@@ -112,4 +124,4 @@ with open(result_path, 'w') as f:
     f.write(result_json)
     f.close()
 
-print("Classification completed. Each indexes have been saved")
+print("分類結果を human-classified-results.json に保存しました。")
