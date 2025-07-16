@@ -3,31 +3,72 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+import tensorflow as tf
+from keras import Model
+from keras.applications import MobileNetV2
 
-cat_size = 10000
-dog_size = 10000
+# ...（之前的常量定义保持不变）...
+
+cat_size = 1000
+dog_size = 1000
 human_size = 200
 
 def load_and_preprocess(image_paths):
     images = []
     for path in image_paths:
-        img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)  # グレースケール化（チャネル干渉低減）
-        img = cv2.resize(img, (128, 128))             # サイズ統一化
-        img = cv2.equalizeHist(img)                   # ヒストグラム均等化（照明影響の軽減）
-        images.append(img.flatten())                  # 1次元ベクトルに変換
+        # 3チャネルカラー画像として読み込み
+        img = cv2.imread(path)
+        if img is None:
+            print(f"画像の読み込みに失敗しました: {path}")
+            continue
+            
+        # リサイズと前処理
+        img = cv2.resize(img, (224, 224))  # MobileNetV2に合わせたサイズ
+        # MobileNetV2の前処理を適用
+        img = tf.keras.applications.mobilenet_v2.preprocess_input(img)
+        images.append(img)
     return np.array(images)
 
 # データセット読み込み
+print("画像をロード中...")
 cat_images = load_and_preprocess([f"images/cats/{i}.jpg" for i in range(cat_size)])
 dog_images = load_and_preprocess([f"images/dogs/{i}.jpg" for i in range(dog_size)])
 human_images = load_and_preprocess([f"images/humans/{i}.jpg" for i in range(human_size)])
+print("画像のロード完了")
 
+# CNN特徴抽出器の初期化
+def create_feature_extractor():
+    base_model = MobileNetV2(
+        weights='imagenet', 
+        include_top=False, 
+        input_shape=(224, 224, 3),
+        pooling='avg'  # グローバル平均プーリングで固定サイズの出力
+    )
+    return Model(inputs=base_model.input, outputs=base_model.output)
+
+# 特徴抽出
+print("CNN特徴抽出中...")
+feature_extractor = create_feature_extractor()
+
+def extract_features(images):
+    # バッチ処理で特徴抽出
+    features = []
+    batch_size = 32
+    for i in range(0, len(images), batch_size):
+        batch = images[i:i+batch_size]
+        features.append(feature_extractor.predict(batch))
+    return np.vstack(features)
+
+cat_features = extract_features(cat_images)
+dog_features = extract_features(dog_images)
+human_features = extract_features(human_images)
+print("特徴抽出完了")
 
 # ステージ2：PCA次元削減と特徴抽出
 from sklearn.decomposition import PCA
 
 # 動物データを統合（ラベル：猫=0，犬=1）
-X_animals = np.vstack([cat_images, dog_images])
+X_animals = np.vstack([cat_features, dog_features])
 y_animals = np.array([0]*cat_size + [1]*dog_size)
 
 X_train, X_test, Y_train, Y_test = train_test_split(
@@ -41,7 +82,8 @@ X_train_pca = pca.transform(X_train)
 X_test_pca = pca.transform(X_test)
 
 # 人間データを同一空間に射影
-X_human_pca = pca.transform(human_images)
+X_human_pca = pca.transform(human_features)
+
 
 # 寄与率プロット
 plt.figure(figsize=(10,4))
@@ -50,15 +92,10 @@ plt.plot(np.cumsum(pca.explained_variance_ratio_))
 plt.axhline(y=0.95, color='r', linestyle='--')
 plt.xlabel('Number of Components')
 plt.ylabel('Cumulative Explained Variance')
+plt.title('Cumulative Explained Variance')
+plt.show(block=False)
 
 # 主成分可視化
-n_components = pca.n_components_
-eigenfaces = pca.components_.reshape((n_components, 128, 128))
-
-plt.subplot(122)
-plt.imshow(eigenfaces[0], cmap='gray')  # 第1主成分
-plt.title('Top Principal Component')
-plt.show(block=False)
 
 print(f"Reduced dimensions: {X_train_pca.shape[1]}")
 
@@ -81,10 +118,18 @@ human_predictions = svm.predict(X_human_pca)  # 0=猫似，1=犬似
 # ステージ4：結果の可視化
 
 # 人間画像と類似結果を表示
+def deprocess_mobilenetv2(x):
+    """MobileNetV2の前処理を逆変換"""
+    x = (x + 1) * 127.5  # [-1,1] → [0,255] に変換
+    return np.clip(x, 0, 255).astype(np.uint8)
+
+# 人間画像と類似結果を表示
 fig, axes = plt.subplots(5, 3, figsize=(10, 12))
 for i, ax in enumerate(axes.flat):
-    ax.imshow(human_images[i].reshape(128, 128), cmap='gray')
+    # 前処理を逆変換 + BGR→RGB変換
+    img = deprocess_mobilenetv2(human_images[i])
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # OpenCVはBGR形式のためRGBに変換
+    ax.imshow(img)
     ax.set_title(f"Resembles: {'Cat' if human_predictions[i]==0 else 'Dog'}")
     ax.axis('off')
 plt.show()
-
