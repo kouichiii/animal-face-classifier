@@ -1,0 +1,202 @@
+{
+    "0.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, such as the somewhat rounded eyes, the softer jawline, and the overall impression of a friendly and open expression, align more closely with characteristics typically associated with a 'dog-like' facial archetype. There is a lack of the sharper angles, sleekness, or more almond-shaped eyes often attributed to a 'cat-like' appearance."
+    },
+    "1.jpg": {
+        "classification": "dog_like",
+        "reason": "The man in the image displays features more aligned with a dog-like archetype. His nose appears relatively broad at the bridge and tip, rather than delicate or pointed. His overall facial contours, including his jawline, seem softer and less sharply defined or angular. While his eyes are squinting, their natural shape appears more rounded than almond-shaped, contributing to a generally genial and open expression."
+    },
+    "2.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, such as the slightly broader nose, the more rounded and open eye shape, and a somewhat more robust jawline, contribute to an overall impression that aligns more with 'dog-like' archetypes. There is a lack of the typically narrow, angular, or delicate features often associated with 'cat-like' faces."
+    },
+    "3.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the nose, appear somewhat broad at the base and bridge, which aligns more with a dog-like archetype. The overall facial structure presents a more robust and less angular or delicate impression, especially in the jawline, lacking the sharp, sleek lines often associated with a cat-like appearance. While the eyes are not distinctively one way or the other, they do not exhibit the typically narrow or almond shape that can be characteristic of cat-like features, appearing more rounded."
+    },
+    "4.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features exhibit more characteristics typically associated with a 'dog-like' archetype. Specifically, the eyes appear open and have a softer shape rather than a sharp, almond, or significantly slanted appearance often seen in 'cat-like' faces. The jawline is defined but has a gentle curve rather than being sharply angular. Furthermore, the overall impression conveyed by the face is one of warmth and approachability, contributing to a 'dog-like' resemblance."
+    },
+    "5.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the rounder eye shape, broader nose bridge, and a softer, less angular jawline, contribute to an overall impression that aligns more closely with 'dog-like' archetypes. There is a gentle roundness to the face rather than sharp, defined angles often associated with 'cat-like' features."
+    },
+    "6.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the open, friendly eyes and the broad, genuine smile, contribute to an overall impression of warmth and approachability. The face shape appears more rounded and less angular, aligning with the typical characteristics associated with a 'dog-like' archetype."
+    },
+    "7.jpg": {
+        "classification": "dog_like",
+        "reason": "The facial features, particularly the somewhat rounded and open eye shape, and the broader lower face and jawline, contribute to a 'dog_like' impression. Cat-like faces often feature more almond-shaped eyes, sharper cheekbones, and a more angular or delicate jawline, which are not prominent here."
+    },
+    "8.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual exhibits several features that contribute to a 'dog-like' impression. The eyes are relatively rounded and widely set, rather than narrow or almond-shaped. The nose appears broader at the base with a somewhat rounded tip, lacking the delicate or pointed appearance often associated with 'cat-like' features. Furthermore, the jawline appears strong and broad, contributing to an overall more robust and less angular facial structure. The general impression is one of approachable, rounded features, which aligns more with a 'dog-like' archetype than a 'cat-like' one."
+    },
+    "9.jpg": {
+        "classification": "dog_like",
+        "reason": "The broader, somewhat rounded nose and the less angular, more open facial structure, particularly around the jawline, contribute to a 'dog-like' resemblance. The features lack the sharp, delicate, or distinctly angular attributes often associated with a 'cat-like' archetype, such as very narrow eyes or a sleek, pointed chin."
+    },
+    "10.jpg": {
+        "classification": "dog_like",
+        "reason": "The person exhibits a wide, open smile and somewhat rounded facial features. The overall impression conveyed is one of approachability and warmth, which is more aligned with the 'dog-like' archetype known for its friendly and eager demeanor."
+    },
+    "11.jpg": {
+        "classification": "dog_like",
+        "reason": "The person exhibits a friendly, open expression with wide, open eyes and a broad, natural smile. The overall facial contours appear softer and more rounded, lacking the sharp angles or narrowness often associated with 'cat-like' features. This combination of features gives a general impression of approachability and warmth, which aligns more with a 'dog-like' archetype."
+    },
+    "12.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's wide, open smile, and the overall impression of warmth and roundness in their facial features, including the less angular jawline and open eye shape, contribute to a more approachable and 'dog-like' appearance."
+    },
+    "13.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, including the rounded, open eyes, the wider nose bridge, and the broad, open smile, contribute to an overall impression of friendliness and approachability. This combination of features aligns more closely with a 'dog_like' archetype, often characterized by a warm and amiable expression."
+    },
+    "14.jpg": {
+        "classification": "dog_like",
+        "reason": "The person's face exhibits features that align more with a 'dog-like' archetype. Specifically, the nose appears broader and more rounded, rather than narrow or delicate. The smile is wide and open, which, combined with the general fullness of the cheeks and a somewhat softer, more rounded facial contour, contributes to an overall impression of amiability and openness often associated with dog-like characteristics. While the eye shape has a slight upward tilt, the overall combination of features, particularly the nose and general face shape, leans definitively towards 'dog_like'."
+    },
+    "15.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's wide, open smile and the overall friendly, robust expression lean towards a 'dog-like' archetype. The face has a certain roundness and openness, rather than the sharper, more angular features often associated with 'cat-like' faces. The eyes are open and expressive, contributing to this friendly appearance."
+    },
+    "16.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual exhibits a broader, more robust facial structure, particularly evident in the strong and wide jawline. The nose also appears broader rather than narrow or pointed. These features contribute to an overall impression of a face that is more 'blunt' and substantial, aligning more closely with 'dog-like' facial archetypes, which typically include a less angular and more sturdy appearance, as opposed to the more delicate or sharp features often associated with 'cat-like' faces."
+    },
+    "17.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's face presents with a more 'dog-like' archetype. Key features contributing to this include the open and direct gaze of the eyes, which lack the slitted or almond shape often associated with cats. The nose appears relatively broad at the bridge and tip, contributing to a more robust central facial structure. The overall facial shape seems broader and less angular or slender, and the expression conveys an earnestness that aligns more with a 'dog-like' impression than the subtle or sleek characteristics of a 'cat-like' archetype."
+    },
+    "18.jpg": {
+        "classification": "dog_like",
+        "reason": "The subject exhibits a more rounded facial structure and softer contours. The eyes appear more open and rounded rather than almond-shaped or slanted. Additionally, the nose bridge seems relatively broad. These features, along with the lack of sharp angles or delicate features typically associated with a 'cat-like' archetype, contribute to an overall 'dog_like' impression."
+    },
+    "19.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, including the relatively broad facial structure, open and somewhat wide-set eyes, and the overall impression of an open, friendly expression, lean more towards a 'dog-like' archetype. There is a lack of the sharper, more angular features, or the more narrow and often subtle eye shape typically associated with 'cat-like' features. The open smile further contributes to this 'dog-like' impression of directness and friendliness."
+    },
+    "20.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the strong and somewhat broad nose, and the prominent, squarish jawline, contribute to a more 'dog-like' archetype. The overall impression is one of robustness and a less delicate facial structure."
+    },
+    "21.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features present a more 'dog-like' archetype due to their broader facial structure, the relatively open set of the eyes which lack the sharp, almond shape often associated with felines, and a somewhat wider, less pointed nose. The overall impression is one of approachability rather than the more angular or subtly aloof characteristics often attributed to 'cat-like' faces."
+    },
+    "22.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the open, round eyes and the wide, genuine smile, contribute to a very approachable and friendly demeanor. The overall impression is one of warmth and joviality, which aligns more closely with a 'dog-like' archetype rather than the more refined or enigmatic 'cat-like' features."
+    },
+    "23.jpg": {
+        "classification": "dog_like",
+        "reason": "The subject's face exhibits features more commonly associated with a dog-like archetype. Specifically, the eyes are relatively wide-set and somewhat rounded, contributing to an open expression. The nose appears broader at the bridge and base. The overall facial structure, including a more substantial jawline and a somewhat jowly appearance, contributes to an impression of a 'friendlier' and less angular, more 'loyal' or 'jolly' countenance, which aligns with dog-like characteristics, rather than the sharper, more angular, or subtle features often associated with a cat-like appearance."
+    },
+    "24.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual exhibits several features that align with a 'dog-like' archetype. His eyes are relatively rounded and open, contributing to a friendly and approachable expression rather than the more almond-shaped or slanted eyes often associated with 'cat-like' features. The nose appears moderately broad, not particularly narrow or sharply defined. Furthermore, the prominent, wide, and open smile enhances an overall impression of warmth and friendliness, which is more characteristic of a 'dog-like' demeanor. The general facial structure, while not extremely broad, lacks the sharp angularity or refined features typically associated with a 'cat-like' appearance, leaning more towards a genial and robust impression."
+    },
+    "25.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the broader and more robust jawline, the wider set eyes, and the overall impression of a sturdy build, align more closely with typical 'dog_like' facial archetypes. There is a lack of the narrowness, sharp angles, or delicate features often associated with 'cat_like' faces."
+    },
+    "26.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual exhibits soft, rounded facial contours, particularly in the jawline and cheeks. Their eyes appear relatively wide-set and have a gentle, open quality, contributing to an overall approachable and friendly impression. The nose is also soft and slightly rounded at the tip. These features align more with the archetypal 'dog-like' facial structure, characterized by softness and amiability, rather than the more angular or sharp features typically associated with 'cat-like' faces."
+    },
+    "27.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the open, slightly rounded eye shape, softer jawline, and overall rounded face structure, align more with what is generally perceived as 'dog-like' facial archetypes. There is an approachable and less angular quality to her features, contrasting with the more sharp or almond-shaped eyes and defined angles often associated with 'cat-like' appearances."
+    },
+    "28.jpg": {
+        "classification": "dog_like",
+        "reason": "The face exhibits features commonly associated with a 'dog-like' archetype. The eyes are relatively wide-set and roundish, contributing to an open and friendly expression. The nose appears softer and somewhat broader, lacking the sharp, narrow definition often seen in 'cat-like' faces. The jawline and chin are rounded rather than angular or pointed. The overall impression is one of softness and openness, which aligns more with a 'dog-like' appearance."
+    },
+    "29.jpg": {
+        "classification": "dog_like",
+        "reason": "The person exhibits a wide, open-mouthed, and highly expressive smile, conveying an impression of uninhibited joy and friendliness. This, combined with the relatively round and open eye shape, contributes to an overall appearance of openness and exuberance that is more commonly associated with 'dog-like' facial archetypes. 'Cat-like' features often lean towards more subtle expressions, almond-shaped eyes, and a refined or somewhat reserved demeanor, which are not present here."
+    },
+    "30.jpg": {
+        "classification": "dog_like",
+        "reason": "The face exhibits a broader structure with a less defined jawline. The eyes are relatively rounded, and the nose appears broader. These features collectively contribute to an overall impression that aligns more closely with the \"dog_like\" facial archetype, which typically includes softer, less angular contours and a wider appearance."
+    },
+    "31.jpg": {
+        "classification": "dog_like",
+        "reason": "The facial features, including the somewhat wide-set and rounded eyes, the broader nose, and the more robust, squarer jawline, contribute to an overall impression that aligns more with a 'dog-like' archetype. The face lacks the typically sharper angles, more delicate features, or almond-shaped eyes often associated with 'cat-like' faces."
+    },
+    "32.jpg": {
+        "classification": "dog_like",
+        "reason": "The person exhibits a broader, more rounded facial structure, a softer jawline, and a wider nose. These features, along with a generally more open and less angular overall impression, align more closely with common 'dog-like' facial archetypes. The eyes, while deep-set, do not possess the narrow or sharply defined shape often associated with 'cat-like' features."
+    },
+    "33.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features lean towards a 'dog-like' archetype due to several characteristics. The eyes appear somewhat wide-set and have a more rounded, open shape rather than the elongated or almond-shaped appearance often associated with 'cat-like' features. The nose bridge is relatively broad, and the overall facial structure has a more robust, less angular quality. There is a general impression of openness and a lack of the sharp, refined, or delicate features typically attributed to a 'cat-like' face. The slight jowl and broader jawline also contribute to a less delicate, more 'dog-like' appearance."
+    },
+    "34.jpg": {
+        "classification": "dog_like",
+        "reason": "The subject's facial features lean towards a 'dog-like' archetype due to their overall softness and amiable expression. Specifically, her eyes are open and rounded, conveying a sense of warmth and approachability, rather than the more almond-shaped or angular eyes often associated with 'cat-like' features. Her nose has a softer, more rounded appearance at the tip. The overall contour of her face, including her jawline and cheeks, appears more rounded and gentle, contributing to a friendly and approachable impression, which aligns more closely with 'dog-like' characteristics than the sharper or more defined lines typically seen in 'cat-like' archetypes."
+    },
+    "35.jpg": {
+        "classification": "dog_like",
+        "reason": "The person exhibits a softer overall facial contour with a gentle jawline, rather than sharp or angular features. Their eyes are relatively large and expressive, conveying an open and amiable impression, which aligns more with 'dog-like' archetypes compared to the typically narrower, more defined, or 'sly' eye shapes often associated with 'cat-like' features. The combination of these softer elements contributes to a more 'dog-like' appearance."
+    },
+    "36.jpg": {
+        "classification": "dog_like",
+        "reason": "The overall facial structure and features lean more towards a 'dog-like' archetype. Her eyes, while not perfectly round, are relatively large and set in a way that conveys openness and a sense of warmth, rather than the sharper, more almond-shaped, or upturned eyes often associated with 'cat-like' features. The jawline is strong and present but lacks the extreme angularity or sharpness that might suggest a feline quality, contributing to a more grounded and substantial appearance. The overall impression is one of strength and approachability."
+    },
+    "37.jpg": {
+        "classification": "cat_like",
+        "reason": "Her facial features, particularly the almond-shaped eyes with a subtle upward tilt at the outer corners, contribute to a refined and elegant appearance. The prominent yet soft cheekbones and the overall composed and graceful demeanor align more with the sleek, alluring archetype often associated with 'cat-like' faces, rather than the typically broader and more overtly 'friendly' features found in 'dog-like' archetypes."
+    },
+    "38.jpg": {
+        "classification": "cat_like",
+        "reason": "The subject exhibits several features aligning with a \"cat-like\" archetype. Her eyes are distinctly almond-shaped with a slight upward tilt at the outer corners, conveying an elegant and observant impression. Her nose has a refined, rather than broad, bridge. Additionally, her facial structure appears more defined with noticeable cheekbones and a relatively angular jawline, contributing to an overall sleek and sophisticated appearance, in contrast to the softer, rounder features typically associated with a \"dog-like\" appearance."
+    },
+    "39.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features, particularly the large, open, and somewhat rounded eye shape, along with a softer, less angular jawline and a generally rounded face, contribute to an overall impression of warmth and approachability. These characteristics align more closely with typical 'dog-like' facial archetypes, which are often associated with softness and an open expression, rather than the sharper, more angular features sometimes associated with 'cat-like' faces."
+    },
+    "40.jpg": {
+        "classification": "cat_like",
+        "reason": "The facial features, particularly the almond-shaped and slightly upturned eyes, the refined nose, and the overall elegant and somewhat mysterious expression, lean more towards a 'cat_like' archetype. There is a certain sleekness and refined quality to the facial structure rather than a broader, more rounded 'dog-like' appearance."
+    },
+    "41.jpg": {
+        "classification": "cat_like",
+        "reason": "The person in the image exhibits several features that align more closely with a 'cat-like' archetype. Her eyes are almond-shaped with a slight upward tilt at the outer corners, contributing to a more elongated and somewhat mysterious gaze, typical of feline eyes. The overall facial structure appears refined and elegant, with a subtle sharpness to the features rather than a broad or rounded appearance. The nose is relatively delicate and well-defined, and the jawline, while not overly strong, contributes to a more angular rather than overtly soft or jowly impression. These specific features collectively give a 'cat-like' impression of grace and subtle intensity."
+    },
+    "42.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's large, rounded, and expressive eyes, along with a wide, open smile that reveals teeth, contribute to an overall impression of warmth and approachability. These features, particularly the open eye shape and broad, friendly smile, are more commonly associated with 'dog-like' facial characteristics that emphasize friendliness and openness, rather than the sharper, more angular features often linked to 'cat-like' archetypes."
+    },
+    "43.jpg": {
+        "classification": "dog_like",
+        "reason": "Her facial features, particularly her large, open, and friendly eyes, softer jawline, and the overall warm and approachable expression, align more with a 'dog-like' archetype than a 'cat-like' one. The impression is one of friendliness and expressiveness."
+    },
+    "44.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features exhibit a harmonious blend of softness and warmth. The eyes, while almond-shaped, convey a gentle and approachable expression rather than a sharp or enigmatic one. The jawline is defined but lacks the angularity typically associated with 'cat-like' archetypes, leaning more towards the softer contours of 'dog-like' features. Overall, the impression is one of warmth and amiability."
+    },
+    "45.jpg": {
+        "classification": "cat_like",
+        "reason": "The subject exhibits several features commonly associated with a 'cat-like' archetype. Her eyes are distinctly almond-shaped with a subtle upward tilt at the outer corners, contributing to a refined and graceful gaze. The nose is relatively small and well-proportioned, lacking the broader or more prominent features often seen in 'dog-like' archetypes. Her overall facial structure appears elegant and somewhat delicate, rather than broad or robust."
+    },
+    "46.jpg": {
+        "classification": "cat_like",
+        "reason": "The subject's eyes are distinctly almond-shaped with a slight upward tilt at the outer corners, which is a common characteristic associated with 'cat-like' facial archetypes. Additionally, the overall impression conveyed by her features, including the refined nose and the subtle intensity in her gaze, contributes to a more feline resemblance rather than the typically rounder eyes and more open, amiable expression associated with 'dog-like' faces."
+    },
+    "47.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual in the center, identified as 'EDMONDS', exhibits a strong and somewhat square jawline, a broader mid-face, and eyes that are more rounded and open rather than almond-shaped or slanted. The overall impression of the face is robust and somewhat blunt, aligning more closely with a 'dog-like' archetype than the more angular, delicate, or 'sharp' features often associated with 'cat-like' faces."
+    },
+    "48.jpg": {
+        "classification": "dog_like",
+        "reason": "The individual's facial features lean towards a 'dog_like' archetype due to a relatively broad face, a friendly and somewhat rounded eye shape, and an overall impression of approachability and warmth. The nose appears moderately broad, and the jawline, while present, lacks sharp, angular definition, contributing to a softer, more amiable look."
+    },
+    "49.jpg": {
+        "classification": "cat_like",
+        "reason": "The individual's features, particularly the almond-shaped eyes with a slight upward tilt at the outer corners, contribute to a 'cat-like' impression. The overall facial structure appears refined and somewhat elegant, rather than broad or rounded. The defined cheekbones also lend themselves to a more chiseled appearance often associated with feline features."
+    }
+}

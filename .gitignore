@@ -2,3 +2,4 @@ images
 .env
 .venv
 .github
+__pycache__

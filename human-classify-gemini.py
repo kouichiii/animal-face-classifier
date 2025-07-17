@@ -10,28 +10,11 @@ load_dotenv()
 import enum
 from pydantic import BaseModel
 from time import sleep
+import prompts as PROMPTS
 
-NUMBER_OF_IMAGES = 250  # Set the number of images to process
+NUMBER_OF_IMAGES = 50  # Set the number of images to process
 
-PROMPT = """
-# Task
-You are an expert in facial analysis. Determine if the person in the image has a "dog-like" or "cat-like" face.
 
-# Criteria
-* **Dog-like features:** Round/drooping eyes, round face, larger/rounder nose, wide mouth, friendly impression.
-* **Cat-like features:** Almond-shaped/upturned eyes, sharp jawline/triangular face, slender nose, small mouth, cool/mysterious impression.
-
-# Instructions
-1.  Analyze the image based on the criteria above.
-2.  You must make a definitive choice between "dog_like" or "cat_like".
-3.  Provide a clear reasoning for your decision.
-
-# Output Format
-Your response MUST be in the following format, and nothing else.
-
-Decision: [dog_like or cat_like]
-Reason: [Your detailed reasoning here.]
-"""
 
 class CatOrDog(enum.Enum):
     CAT_LIKE = "cat_like"
@@ -88,7 +71,7 @@ for image_index in range(NUMBER_OF_IMAGES):
                     data=image_bytes,
                     mime_type='image/jpeg',
                 ),
-                PROMPT
+                PROMPTS.CLASSIFY_PROMPT
             ],
             config={
                 'response_mime_type': 'application/json',
