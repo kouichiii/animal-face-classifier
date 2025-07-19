@@ -123,8 +123,11 @@ def deprocess_mobilenetv2(x):
     x = (x + 1) * 127.5  # [-1,1] → [0,255] に変換
     return np.clip(x, 0, 255).astype(np.uint8)
 
+for i in range(human_size):
+    print(f"Image {i}: {'Cat' if human_predictions[i]==0 else 'Dog'} similarity")
+
 # 人間画像と類似結果を表示
-fig, axes = plt.subplots(5, 3, figsize=(10, 12))
+fig, axes = plt.subplots(5, 6, figsize=(10, 12))
 for i, ax in enumerate(axes.flat):
     # 前処理を逆変換 + BGR→RGB変換
     img = deprocess_mobilenetv2(human_images[i])
@@ -132,4 +135,30 @@ for i, ax in enumerate(axes.flat):
     ax.imshow(img)
     ax.set_title(f"Resembles: {'Cat' if human_predictions[i]==0 else 'Dog'}")
     ax.axis('off')
+plt.show(block=False)
+
+# ステージ5：t-SNEによる可視化
+
+from sklearn.manifold import TSNE
+
+# 数据合并
+X_all = np.vstack([X_animals, human_features])
+y_all = np.array([0]*cat_size + [1]*dog_size + [2]*human_size)
+
+# 特征降维
+tsne = TSNE(n_components=2, perplexity=30, random_state=42)
+X_embedded = tsne.fit_transform(X_all)
+
+# 可视化
+plt.figure(figsize=(10, 6))
+colors = ['orange', 'blue', 'green']
+labels = ['Cat', 'Dog', 'Human']
+for i in range(3):
+    plt.scatter(X_embedded[y_all==i, 0], X_embedded[y_all==i, 1], 
+                label=labels[i], alpha=0.6)
+plt.legend()
+plt.title('t-SNE of CNN Features')
+plt.xlabel('Dim 1')
+plt.ylabel('Dim 2')
+plt.grid(True)
 plt.show()
