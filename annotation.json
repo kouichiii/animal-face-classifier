@@ -1,0 +1,352 @@
+[
+  {
+    "index": 0,
+    "annotatorA": { "label": "dog", "reason": ["NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.66 }
+  },
+  {
+    "index": 1,
+    "annotatorA": { "label": "dog", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.75 }
+  },
+  {
+    "index": 2,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "EYE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.71 }
+  },
+  {
+    "index": 3,
+    "annotatorA": { "label": "dog", "reason": ["MOUTH"] },
+    "annotatorB": { "label": "dog", "reason": ["BROW", "MOUTH", "NOSE"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.72 }
+  },
+  {
+    "index": 4,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.75 }
+  },
+  {
+    "index": 5,
+    "annotatorA": { "label": "dog", "reason": ["CHEEK"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE", "EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "cat", "prob": 0.55 }
+  },
+  {
+    "index": 6,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.61 }
+  },
+  {
+    "index": 7,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["BROW"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.62 }
+  },
+  {
+    "index": 8,
+    "annotatorA": { "label": "cat", "reason": ["NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.72 }
+  },
+  {
+    "index": 9,
+    "annotatorA": { "label": "cat", "reason": ["NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["MOUTH"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.71 }
+  },
+  {
+    "index": 10,
+    "annotatorA": { "label": "dog", "reason": ["NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.64 }
+  },
+  {
+    "index": 11,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.51 }
+  },
+  {
+    "index": 12,
+    "annotatorA": { "label": "cat", "reason": ["NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.75 }
+  },
+  {
+    "index": 13,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["MOUTH"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "MOUTH", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.84 }
+  },
+  {
+    "index": 14,
+    "annotatorA": { "label": "dog", "reason": ["EYE", "MOUTH"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.63 }
+  },
+  {
+    "index": 15,
+    "annotatorA": { "label": "dog", "reason": ["EYE", "MOUTH"] },
+    "annotatorB": { "label": "cat", "reason": ["CHEEK"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.6 }
+  },
+  {
+    "index": 16,
+    "annotatorA": { "label": "dog", "reason": ["CHEEK"] },
+    "annotatorB": { "label": "cat", "reason": ["MOUTH"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.51 }
+  },
+  {
+    "index": 17,
+    "annotatorA": { "label": "dog", "reason": ["EYE", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["MOUTH"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "NOSE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.57 }
+  },
+  {
+    "index": 18,
+    "annotatorA": { "label": "dog", "reason": ["CHEEK"] },
+    "annotatorB": { "label": "cat", "reason": ["CHEEK"] },
+    "LLM": { "label": "dog", "reason": ["CHEEK", "CONTOUR"] },
+    "SVM": { "label": "cat", "prob": 0.52 }
+  },
+  {
+    "index": 19,
+    "annotatorA": { "label": "cat", "reason": ["EYE", "MOUTH"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.65 }
+  },
+  {
+    "index": 20,
+    "annotatorA": { "label": "dog", "reason": ["NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.59 }
+  },
+  {
+    "index": 21,
+    "annotatorA": { "label": "cat", "reason": ["SIZE_SMALL"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["CONTOUR", "NOSE"] },
+    "SVM": { "label": "dog", "prob": 0.86 }
+  },
+  {
+    "index": 22,
+    "annotatorA": { "label": "dog", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["CHEEK"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.73 }
+  },
+  {
+    "index": 23,
+    "annotatorA": { "label": "dog", "reason": ["CHEEK"] },
+    "annotatorB": { "label": "dog", "reason": ["MOUTH"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.82 }
+  },
+  {
+    "index": 24,
+    "annotatorA": { "label": "dog", "reason": ["MOUTH"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.56 }
+  },
+  {
+    "index": 25,
+    "annotatorA": { "label": "dog", "reason": ["CONTOUR"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["EYE"] },
+    "SVM": { "label": "dog", "prob": 0.65 }
+  },
+  {
+    "index": 26,
+    "annotatorA": { "label": "cat", "reason": ["EYE", "CONTOUR"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.51 }
+  },
+  {
+    "index": 27,
+    "annotatorA": { "label": "dog", "reason": ["NOSE", "MOUTH"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "EYE", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.87 }
+  },
+  {
+    "index": 28,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR"] },
+    "annotatorB": { "label": "cat", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.65 }
+  },
+  {
+    "index": 29,
+    "annotatorA": { "label": "cat", "reason": ["NOSE", "CONTOUR"] },
+    "annotatorB": { "label": "dog", "reason": ["EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.87 }
+  },
+  {
+    "index": 30,
+    "annotatorA": { "label": "cat", "reason": ["EYE", "CONTOUR"] },
+    "annotatorB": { "label": "cat", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.91 }
+  },
+  {
+    "index": 31,
+    "annotatorA": { "label": "dog", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.65 }
+  },
+  {
+    "index": 32,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.7 }
+  },
+  {
+    "index": 33,
+    "annotatorA": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR", "NOSE"] },
+    "SVM": { "label": "dog", "prob": 0.66 }
+  },
+  {
+    "index": 34,
+    "annotatorA": { "label": "dog", "reason": ["NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW", "EYE"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CHEEK", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.77 }
+  },
+  {
+    "index": 35,
+    "annotatorA": { "label": "dog", "reason": ["NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["BROW"] },
+    "LLM": { "label": "dog", "reason": ["CONTOUR", "EYE", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.7 }
+  },
+  {
+    "index": 36,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW", "EXPR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "EXPR", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.56 }
+  },
+  {
+    "index": 37,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.61 }
+  },
+  {
+    "index": 38,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["CONTOUR", "EYE"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.57 }
+  },
+  {
+    "index": 39,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["CONTOUR", "EYE", "BROW"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.69 }
+  },
+  {
+    "index": 40,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "EXPR"] },
+    "SVM": { "label": "dog", "prob": 0.64 }
+  },
+  {
+    "index": 41,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "cat", "prob": 0.83 }
+  },
+  {
+    "index": 42,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "EXPR"] },
+    "SVM": { "label": "cat", "prob": 0.66 }
+  },
+  {
+    "index": 43,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["CONTOUR", "BROW"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.63 }
+  },
+  {
+    "index": 44,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "cat", "reason": ["EYE", "BROW"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "CONTOUR", "NOSE"] },
+    "SVM": { "label": "dog", "prob": 0.64 }
+  },
+  {
+    "index": 45,
+    "annotatorA": { "label": "cat", "reason": ["CONTOUR", "NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CHEEK"] },
+    "SVM": { "label": "dog", "prob": 0.71 }
+  },
+  {
+    "index": 46,
+    "annotatorA": { "label": "dog", "reason": ["EYE", "NOSE"] },
+    "annotatorB": { "label": "dog", "reason": ["CHEEK"] },
+    "LLM": { "label": "dog", "reason": ["EXPR", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.73 }
+  },
+  {
+    "index": 47,
+    "annotatorA": { "label": "dog", "reason": ["EYE"] },
+    "annotatorB": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "LLM": { "label": "dog", "reason": ["EYE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.63 }
+  },
+  {
+    "index": 48,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "NOSE", "CONTOUR"] },
+    "SVM": { "label": "dog", "prob": 0.64 }
+  },
+  {
+    "index": 49,
+    "annotatorA": { "label": "cat", "reason": ["EYE"] },
+    "annotatorB": { "label": "cat", "reason": ["BROW"] },
+    "LLM": { "label": "cat", "reason": ["EYE", "CONTOUR", "CHEEK"] },
+    "SVM": { "label": "dog", "prob": 0.67 }
+  }
+]

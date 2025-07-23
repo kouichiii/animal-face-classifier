@@ -1,0 +1,5 @@
+streamlit==1.34.0
+scikit-learn==1.4.2
+numpy
+Pillow
+rembg==2.0.51

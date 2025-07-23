@@ -1,1 +1,5 @@
 images
+.venv
+cache
+lime_human_results
+lime_human_results_v2
